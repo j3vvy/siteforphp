@@ -1,0 +1,204 @@
+<html>
+<head >
+<style type="text/css">{  background-color: #f9f9f9;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>BAKKERY</title>
+	<div class="logo">
+		<a href="index.html"><img src="img/logo1.png"></a>
+		</div>
+<div class="menu">
+  <div onclick="location.href='katalog.html'" class="div1" style="width: 200px; cursor:hand; "onmouseover= "this.style.backgroundColor= '#b88353';" onmouseout="this.style.backgroundColor='#936d4c';"> <a href="katalog.html" class="current">Каталог</a></div>
+  <div onclick="location.href='oplata.html'" class="div2" style="width: 300px; cursor:hand; "onmouseover= "this.style.backgroundColor= '#b88353';" onmouseout="this.style.backgroundColor='#936d4c';"> <a href="oplata.html">Корзина</a></div>
+  <div onclick="location.href='kompaniya.html'" class="div3" style="width: 250px; cursor:hand; "OnMouseOver= "this.style.backgroundColor= '#b88353';" onmouseout="this.style.backgroundColor='#936d4c';"> <a href="kompaniya.html">О компании</a></div>
+  <div onclick="location.href='kontakti.html'" class="div4" style="width: 200px; cursor:hand; "onMouseOver= "this.style.backgroundColor= '#b88353';" onMouseOut="this.style.backgroundColor='#936d4c';"> <a href="kontakti.html">Контакты</a>
+  </div>
+</div>
+	</head>
+<body>
+  <style type="text/css">{  background-color: #f9f9f9;}</style>
+<div class="slider">
+
+  <!-- Первый слайд -->
+  <div class="item">
+    <img src="img\1.jpg">
+  </div>
+
+  <!-- Второй слайд -->
+  <div class="item">
+    <img src="img\2.jpg">
+  </div>
+
+  <!-- Третий слайд -->
+  <div class="item">
+    <img src="img\3.jpg">
+  </div>
+
+  <!-- Кнопки-стрелочки -->
+  <a class="previous" onclick="previousSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+  <script type="text/javascript">
+let slideIndex = 1;
+showSlides(slideIndex);
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+    let slides = document.getElementsByClassName("item");
+    
+
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";    
+}
+  </script>
+</div>
+
+<div class="kat">
+  <p>Новинки</p>
+ <div class="product-item">
+  <img src="img\kat1.jpg">
+  <div class="product-list">
+    <h3>Няка с ветчиной</h3>
+      <span class="price">₽ 210</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item1">
+  <img src="img\kat2.jpg">
+  <div class="product-list">
+    <h3>Няка с колбасой</h3>
+      <span class="price">₽ 210</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item2">
+  <img src="img\kat3.jpg">
+  <div class="product-list">
+    <h3>Няка летняя с ананасом</h3>
+      <span class="price">₽ 250</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item3">
+  <img src="img\kat4.jpg">
+  <div class="product-list">
+    <h3>Котлета в тесте</h3>
+      <span class="price">₽ 65</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item4">
+  <img src="img\kat5.jpg">
+  <div class="product-list">
+    <h3>Сосика в тесте</h3>
+      <span class="price">₽ 45</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item5">
+  <img src="img\kat6.jpg">
+  <div class="product-list">
+    <h3>Булочка с колбасой и сыром</h3>
+      <span class="price">₽ 55</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+</div>
+<div class="kat2">
+  <p>Хиты продаж</p>
+ <div class="product-item">
+  <img src="img\hit3.jpg">
+  <div class="product-list">
+    <h3>Няка с курицей</h3>
+      <span class="price">₽ 230</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item1">
+  <img src="img\hit6.jpg" height="300px">
+  <div class="product-list">
+    <h3>Cок</h3>
+      <span class="price">₽ 30</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item2">
+  <img src="img\hit2.jpg">
+  <div class="product-list">
+    <h3>Няка</h3>
+      <span class="price">₽ 375</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item3">
+  <img src="img\hit5.jpg">
+  <div class="product-list">
+    <h3>Кофе 3в1</h3>
+      <span class="price">₽ 35</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item4">
+  <img src="img\hit1.jpg">
+  <div class="product-list">
+    <h3>Ветчина и грибы</h3>
+      <span class="price">₽ 220</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+ <div class="product-item5">
+  <img src="img\hit4.jpg" height="300px">
+  <div class="product-list">
+    <h3>Пицца маленькая</h3>
+      <span class="price">₽ 70</span>
+      <a href="oplata.html" class="button">Купить</a>
+  </div>
+</div> 
+</div>
+</body>
+  <footer>
+  <div class="podik">
+
+    <div class="pod">
+    <a href="index.html"><img src="img/logo1.png"></a>
+    <hr align="left" width="700" size="1" color="#957d63"/>
+    <div class="podin">
+        <p>
+      Микрорайон им. Макаренко, 3a, Старый Оскол, Белгородская обл., 309516 
+      <br>Работает: с 9:00 до 19:00 <br>
+      Телефон:
+      +7 (800) 555-35-35<br> 
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+7 (495) 355-55-53<br><b>Почта:</b> nchistyh@gmail.com
+  
+    </p>
+    <div class="ico">
+  <a href="https://www.instagram.com/cheen_l3/?hl=ru"><img src="img\ico1.png"></a>
+  <a href="https://t.me/cheen_2"><img src="img\ico2.png"></a>
+  <a href="https://vk.com/chistykh2"><img src="img\ico5.png"></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</html>
